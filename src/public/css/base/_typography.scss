@@ -1,0 +1,41 @@
+//Fibonacci sequence combined
+$font-xs: 8px;
+$font-s: 10px;
+$font-m: 14px;
+$font-l: 16px;
+$font-xl: 18px;
+$font-xxl: 20px;
+$font-xxxl: 32px;
+
+$font-weight-light: 200;
+$font-weight-regular: 400;//Same as Normal
+$font-weight-bold: 700;//Same as Bold
+
+$font-family: "Arial";
+
+$font-list: (light, $font-family, normal, $font-weight-light),
+            (light-italic, $font-family, italic, $font-weight-light),
+            (regular, $font-family, normal, $font-weight-regular),
+            (regular-italic, $font-family, italic, $font-weight-regular),
+            (bold, $font-family, normal, $font-weight-bold),
+            (bold-italic, $font-family, italic, $font-weight-bold);
+
+
+// Font placeholders created:
+// %font-light
+// %font-light-italic
+// %font-regular
+// %font-regular-italic
+// %font-bold
+// %font-bold-italic
+
+@each $rule, $name, $style, $weight in $font-list {
+
+    //@include font-face(quote($name), "../assets/fonts/#{$name}/#{$name}", $file-formats: ttf);
+
+    %font-#{$rule} {
+        font-family: quote($name), Sans-Serif !important;
+        font-style: $style;
+        font-weight: $weight;
+      }
+}
