@@ -1,0 +1,46 @@
+@import "color-palette";
+//********************************************
+//                 Speed                     *
+//********************************************
+$speed-fast: 0.2s;
+$speed-medium: 0.4s;
+$speed-slow: 0.8s;
+//********************************************
+
+
+//********************************************
+//                colors                     *
+//********************************************
+$primary-color: $sky-blue;
+$secondary-color: $white;
+$tertiary-color: $black;
+
+$primary-bk-color: $white;
+$secondary-bk-color: $sky-blue;
+
+$primary-border-color: $gray;
+
+$base-white: $white;
+$base-gray: $gray;
+$base-black: $black;
+$base-light-gray: $light-gray;
+$accent-blue-color: $midnight-blue;
+
+$accent-color: $green;
+$error-color: $orange;
+
+//*******************************************
+
+
+//********************************************
+//              General sizes                *
+//********************************************
+
+// Main components sizes
+
+$header-height: 100px;
+$main-menu-height: 750px;
+
+// Standard field sizes
+
+$large-sel-fld-width: 350px;
